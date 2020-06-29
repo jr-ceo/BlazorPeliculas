@@ -1,0 +1,11 @@
+﻿@if (Url == null)
+{
+    <img src="./img/interrogacion.jpg" />
+}
+else
+{
+    <img src="@Url" />
+}
+@code {
+    [Parameter] public string Url { get; set; }
+}
